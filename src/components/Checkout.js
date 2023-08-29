@@ -1,10 +1,13 @@
-// Checkout.js
 import React from 'react';
-import './Checkout.css'; // Import your CSS file for styling
+import './styles/Checkout.css';
+import { Link } from 'react-router-dom';
 
 const Checkout = ({ cartItems }) => {
   const calculateTotal = () => {
-    return cartItems.reduce((total, item) => total + item.price, 0);
+    return cartItems.reduce((total, item) => {
+      const itemQuantity = item.quantity || 1; // Default to 1 if quantity is undefined
+      return total + item.price * itemQuantity;
+    }, 0);
   };
 
   return (
@@ -15,11 +18,12 @@ const Checkout = ({ cartItems }) => {
           <li key={item.id} className="checkout-item">
             <p>{item.name}</p>
             <p>Price: {item.price}</p>
+            <p>Quantity: {item.quantity || 1}</p> {/* Display the quantity */}
           </li>
         ))}
       </ul>
       <p>Total: {calculateTotal()}</p>
-      <button>Proceed to Payment</button>
+      <Link to="/login"><button>Proceed to Payment</button></Link>
     </div>
   );
 };

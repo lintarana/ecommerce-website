@@ -1,0 +1,30 @@
+.adminUsers {
+    padding: 20px;
+    margin-left: 235px;
+  }
+  
+  .userTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .userTable th,
+  .userTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .userTable th {
+    background-color: #f2f2f2;
+  }
+  
+  .userTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .userTable tr:hover {
+    background-color: #ddd;
+  }
+  

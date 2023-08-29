@@ -1,0 +1,32 @@
+.adminOrders {
+    background-color: #f5f5f5;
+    min-height: 100vh;
+  }
+  
+  .ordersMain {
+    padding: 20px;
+  }
+  
+  .ordersList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .orderCard {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .orderCard h3 {
+    margin: 0;
+  }
+  
+  .orderCard p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+  }
+  
+  

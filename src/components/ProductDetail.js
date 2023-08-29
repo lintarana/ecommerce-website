@@ -1,14 +1,14 @@
-// ProductDetail.js
+
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom'; // Import useParams to get route parameters
-import './ProductDetail.css'; // Import your CSS file for styling
+import { useParams } from 'react-router-dom'; 
+import './styles/ProductDetail.css'; 
 
 const ProductDetail = () => {
-  const { productId } = useParams(); // Get the product ID from the URL parameter
+  const { productId } = useParams(); 
   const [product, setProduct] = useState(null);
 
   useEffect(() => {
-    // Simulating fetching product data from an API
+    
     const fetchProduct = async () => {
       try {
         const response = await fetch(`/api/products/${productId}`);
