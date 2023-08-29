@@ -1,0 +1,40 @@
+/* Checkout.css */
+.checkout {
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  .checkout h2 {
+    margin-bottom: 10px;
+  }
+  
+  .checkout-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .checkout-item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+  }
+  
+  .checkout-item p {
+    margin: 0;
+  }
+  
+  .checkout p:last-child {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .checkout button {
+    margin-top: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
