@@ -24,7 +24,7 @@ const Header = ({ cartItems, username, onLogout }) => {
         </div>
       </div>
       <div className={styles.centerText}>
-        R A D
+        inta's Store
       </div>
       <div className={styles.rightSection}>
         <Link to="/cart" className={styles.cartIcon}>
